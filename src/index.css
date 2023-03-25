@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  @apply hover:text-rose-700 transition-colors text-lg;
+}
+
+body {
+  @apply text-white text-lg;
+}
+
+svg {
+  @apply hover:text-rose-700 transition-colors;
+}
+
+.hero {
+  @apply h-[90%] w-full flex justify-center items-center container mx-auto;
+  background-image: url("/public/images/profile-pic.jpg");
+  background-position: left;
+}
+
+.hero-overlay {
+  @apply h-full w-full bg-gradient-to-r from-black via-black to-transparent opacity-95;
+}
+
+.btn-1 {
+  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-3xl;
+}
+
+.btn-2 {
+  @apply btn bg-transparent border-white hover:bg-transparent hover:border-rose-700 rounded-3xl hover:text-rose-700;
+}
