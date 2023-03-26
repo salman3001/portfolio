@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
-  @apply hover:text-rose-700 transition-colors text-lg;
+  @apply hover:text-rose-700 transition-colors text-lg lg:text-2xl;
 }
 
 body {
@@ -15,8 +19,8 @@ svg {
 }
 
 .hero {
-  @apply h-[90%] w-full flex justify-center items-center container mx-auto;
-  background-image: url("/public/images/profile-pic.jpg");
+  @apply h-screen w-full flex justify-center items-center mx-auto;
+  background-image: url("/images/profile-pic.jpg");
   background-position: left;
 }
 
@@ -30,4 +34,8 @@ svg {
 
 .btn-2 {
   @apply btn bg-transparent border-white hover:bg-transparent hover:border-rose-700 rounded-3xl hover:text-rose-700;
+}
+
+.btn-3 {
+  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 hover:text-rose-700 rounded-3xl;
 }

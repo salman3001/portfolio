@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
   </head>
+  <style>
+    .please-wait {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="please-wait">
+        <progress className=" w-56"></progress><br />
+        Loading App. Please wait! It take time for first time.
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
