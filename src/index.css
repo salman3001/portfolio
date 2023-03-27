@@ -39,3 +39,7 @@ svg {
 .btn-3 {
   @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 hover:text-rose-700 rounded-3xl;
 }
+
+.image-container {
+  @apply float-left aspect-square relative clear-right  w-1/3 h-52 overflow-hidden;
+}

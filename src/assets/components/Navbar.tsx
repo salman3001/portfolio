@@ -31,7 +31,7 @@ const Navbar = ({ handelClick }: INavbar) => {
           className={` ${
             scrollPosition > window.innerHeight - 10 &&
             "text-black bg-base-100 shadow-lg"
-          }  fixed h-[8%] p-5 w-full  z-30`}
+          }  fixed h-[8%] px-5 w-full  z-30`}
         >
           <div className="container justify-between mx-auto w-full h-full flex">
             <div className="flex px-4">
