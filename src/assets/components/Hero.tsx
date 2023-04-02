@@ -13,12 +13,12 @@ const Hero = () => {
   };
   return (
     <>
-      <Navbar handelClick={handelClick} />
+      <Navbar handelClick={handelClick} open={open} />
       {open && <SideMenu setOpen={setOpen} />}
       <div className="hero">
         <div className="hero-overlay">
-          <div className="flex justify-center container lg:pl-32   sm:w-[70%] h-full w-full px-10 ">
-            <div className="flex flex-col items-center justify-center">
+          <div className="container flex py-16 min-h-screen justify-center h-full  px-10 ">
+            <div className="flex flex-col  items-center justify-center">
               <span className="text-2xl">
                 Hi there! I am{" "}
                 <span className="text-rose-700 text-3xl">Salman</span>, I Make

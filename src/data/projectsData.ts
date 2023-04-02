@@ -3,7 +3,7 @@ export const projectData = [
     title: "React Calculator",
     img: "https://picsum.photos/200",
     description:
-      "will describe fdsf df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdff df zfzfz fzdf zxdf zxd fzxdf z dfzxdsf df zfzfz fzdf zxdf zxd fzxdf z dfzxvdsoon",
+      "will describe fdsf lore df zfzfz fzdf zxdff df zfzfz fzdf zxdff df ",
   },
   {
     title: "BuyZone Ecommerce App",
@@ -12,6 +12,21 @@ export const projectData = [
   },
   {
     title: "Multi App Server -Nest Js",
+    img: "https://picsum.photos/200",
+    description: "will describe soon",
+  },
+  {
+    title: "Buyzone Express server",
+    img: "https://picsum.photos/200",
+    description: "will describe soon",
+  },
+  {
+    title: "Buyzone Express server",
+    img: "https://picsum.photos/200",
+    description: "will describe soon",
+  },
+  {
+    title: "Buyzone Express server",
     img: "https://picsum.photos/200",
     description: "will describe soon",
   },

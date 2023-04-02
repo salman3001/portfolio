@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 
 interface INavbar {
   handelClick: () => void;
+  open: boolean;
 }
-const Navbar = ({ handelClick }: INavbar) => {
+const Navbar = ({ handelClick, open }: INavbar) => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  console.log(scrollPosition);
 
   const navigate = useNavigate();
 
@@ -26,14 +26,17 @@ const Navbar = ({ handelClick }: INavbar) => {
 
   return (
     <>
-      {scrollPosition < 1 || scrollPosition > window.innerHeight - 10 ? (
+      {scrollPosition < 1 ||
+      scrollPosition > window.innerHeight - 10 ||
+      open ? (
         <div
           className={` ${
             scrollPosition > window.innerHeight - 10 &&
+            !open &&
             "text-black bg-base-100 shadow-lg"
-          }  fixed h-[8%] px-5 w-full  z-30`}
+          }  fixed h-[8%]  w-full  z-30`}
         >
-          <div className="container justify-between mx-auto w-full h-full flex">
+          <div className="container  justify-between mx-auto w-full h-full flex">
             <div className="flex px-4">
               <img
                 src="/images/SK-logo.png"
@@ -57,8 +60,8 @@ const Navbar = ({ handelClick }: INavbar) => {
                 <AiFillLinkedin />
               </a>
             </div>
-            <div className="px-4 z-20 sm:hidden flex items-center justify-center gap-3">
-              <CiBurger size={35} onClick={handelClick} />
+            <div className="px-2 z-20 sm:hidden text-5xl flex items-center justify-center ">
+              <CiBurger onClick={handelClick} style={{ fontSize: "inherit" }} />
             </div>
           </div>
         </div>

@@ -19,25 +19,25 @@ svg {
 }
 
 .hero {
-  @apply h-screen w-full flex justify-center items-center mx-auto;
+  @apply min-h-screen w-full flex justify-center items-center mx-auto;
   background-image: url("/images/profile-pic.jpg");
   background-position: left;
 }
 
 .hero-overlay {
-  @apply h-full w-full bg-gradient-to-r from-black via-black to-transparent opacity-95;
+  @apply min-h-screen w-full  flex justify-center bg-gradient-to-r from-black via-black to-transparent opacity-95;
 }
 
 .btn-1 {
-  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-3xl;
+  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-none;
 }
 
 .btn-2 {
-  @apply btn bg-transparent border-white hover:bg-transparent hover:border-rose-700 rounded-3xl hover:text-rose-700;
+  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-none;
 }
 
 .btn-3 {
-  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 hover:text-rose-700 rounded-3xl;
+  @apply btn btn-sm bg-transparent border-rose-700 hover:bg-transparent hover:border-rose-700 rounded-none hover:bg-rose-700 hover:text-white text-rose-700;
 }
 
 .image-container {
