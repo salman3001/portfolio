@@ -1,31 +1,33 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ProjestCard from "./ProjestCard";
 import { projectData } from "../../data/projectsData";
 import Card from "./card";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
-const Projects = () => {
-  const scrollRef = useRef<HTMLDivElement>();
+const divelem = document.querySelector("#project-scroll");
+const scrollHandler = (amount: number) => {
+  divelem.scrollLeft += amount;
+};
 
-  const scroll = (amount: number) => {
-    if (scrollRef.current?.scrollLeft !== null) {
-      scrollRef.current?.scrollLeft += amount;
-    }
-  };
+const Projects = () => {
+  useEffect(() => {}, []);
 
   return (
-    <div className="min-h-screen bg-base-100 p-10 md:p-20  gap-8 flex flex-col">
+    <div className="min-h-screen  bg-base-100 p-10 md:p-20  gap-8 flex flex-col">
       <h1 id="projects" className="text-4xl font-bold">
-        Projects
+        My Projects
       </h1>
       <div className="flex relative  items-center">
-        <div className="absolute cursor-pointer text-gray-400 top-1/2 left-[-20px]">
-          <MdArrowBackIosNew size={40} />
+        <div
+          className="absolute cursor-pointer text-white top-[42%] left-[-40px] bg-slate-400 opacity-50 rounded-full p-2"
+          onClick={() => scrollHandler(-200)}
+        >
+          <MdArrowBackIosNew size={60} />
         </div>
 
         <div
-          ref={scrollRef}
-          className="flex  overflow-scroll snap-x snap-mandatory scrollbar-hide "
+          id="project-scroll"
+          className="flex scroll-smooth  overflow-scroll snap-x snap-mandatory scrollbar-hide p-4"
         >
           <div className="flex min-w-max justify-center gap-4  ">
             {projectData.map((project) => (
@@ -38,10 +40,10 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="absolute cursor-pointer top-1/2 text-gray-400 right-[-20px]"
-          onClick={() => scroll(20)}
+          className="absolute cursor-pointer text-white top-[42%] right-[-40px] bg-slate-400 opacity-50 rounded-full p-2"
+          onClick={() => scrollHandler(200)}
         >
-          <MdArrowForwardIos size={40} />
+          <MdArrowForwardIos size={60} />
         </div>
       </div>
     </div>

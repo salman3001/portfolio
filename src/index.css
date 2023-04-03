@@ -29,11 +29,11 @@ svg {
 }
 
 .btn-1 {
-  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-none;
+  @apply btn bg-rose-700 border-rose-700  hover:bg-transparent hover:border-rose-700 rounded-none;
 }
 
 .btn-2 {
-  @apply btn bg-rose-700  hover:bg-transparent hover:border-rose-700 rounded-none;
+  @apply btn bg-rose-700 text-rose-700 hover:bg-rose-700 hover:text-white bg-transparent border-rose-700 rounded-none;
 }
 
 .btn-3 {
