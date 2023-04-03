@@ -4,7 +4,7 @@ import { skillsData } from "../../data/skillsData";
 
 const Skills = () => {
   return (
-    <div className="min-h-screen  p-20 pt-40 gap-8 flex flex-col">
+    <div className=" px-10 py-5  md:px-20 md:py-10 gap-8 flex flex-col">
       <h1 id="skills" className="text-4xl">
         Skills
       </h1>
