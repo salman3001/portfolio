@@ -7,7 +7,7 @@ interface IFeedCard {
 
 export default function Card(prop: IFeedCard) {
   return (
-    <div className="flex snap-center flex-col gap-4 rounded-t-md h-80 w-80 border-rose-700 shadow-rose-200 shadow-lg group overflow-hidden ">
+    <div className="flex snap-center flex-col gap-4 rounded-t-md h-80 w-80 border-rose-700  shadow-xl group overflow-hidden ">
       {/* image container */}
       <div className="relative h-[40%] w-auto">
         <div

@@ -15,9 +15,10 @@ const Projects = () => {
       <h1 id="projects" className="text-4xl font-bold">
         My Projects
       </h1>
+      <div className="divider"></div>
       <div className="flex relative  items-center">
         <div
-          className="absolute cursor-pointer text-white top-[42%] left-[-40px] bg-slate-200 opacity-50 rounded-full p-2"
+          className="absolute cursor-pointer text-white top-[42%] left-[-50px] shadow-sm shadow-black bg-slate-200 bg-opacity-50 rounded-full p-2"
           onClick={() => scrollHandler(-200)}
         >
           <MdArrowBackIosNew size={50} />
@@ -40,7 +41,7 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="absolute cursor-pointer text-white top-[42%] right-[-40px] bg-slate-200 opacity-50 rounded-full p-2"
+          className="absolute cursor-pointer shadow-sm shadow-black text-white top-[42%] right-[-50px] bg-slate-200 bg-opacity-50 rounded-full p-2"
           onClick={() => scrollHandler(200)}
         >
           <MdArrowForwardIos size={50} />

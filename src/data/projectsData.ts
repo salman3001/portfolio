@@ -3,7 +3,7 @@ export const projectData = [
     title: "BuyZone Ecommerce App",
     img: import.meta.env.VITE_BASE_URL + "/images/mern-logo.png",
     description:
-      "This a full stack MERN Ecommerce application. It has many features like, cart, Reviews, authentication, Roles, products sorting and filtering , products search and more. It uses uses tools like redux, RTK quey, react rounter, MUI etc",
+      "This is a full stack MERN Ecommerce application. It has many features like, cart, Reviews, authentication, Roles, products sorting and filtering , products search and more. Tools used are react, redux, RTK query, react rounter, MUI etc",
     link: "https://salman3001.github.io/buyzone-ecommerce-app-mern/",
   },
   {
