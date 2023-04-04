@@ -5,8 +5,8 @@ interface ISkillCard {
 
 const SkillsCard = (prop: ISkillCard) => {
   return (
-    <div className="h-36 w-36 flex flex-col hover:scale-110 transition-transform items-center justify-between shadow-xl p-2 gap-2  ">
-      <img src={prop.img} className="h-[70%] w-auto" alt="" />
+    <div className="h-36 w-36 flex flex-col hover:scale-110 transition-transform items-center justify-between  p-2 bg-transparent gap-2 ">
+      <img src={prop.img} className="h-[70%] w-auto " alt="" />
       <p className="text-xl font-bold">{prop.name}</p>
     </div>
   );

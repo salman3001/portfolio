@@ -81,7 +81,7 @@ export const skillsData = {
       img: import.meta.env.VITE_BASE_URL + "/images/passport-logo.png",
     },
     {
-      name: "Json Web Tokens",
+      name: "JWT",
       img: import.meta.env.VITE_BASE_URL + "/images/jwt-logo.png",
     },
     {

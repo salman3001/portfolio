@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { projectData } from "../../data/projectsData";
 import Card from "./card";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
@@ -9,6 +9,20 @@ const Projects = () => {
   const scrollHandler = (amount: number) => {
     scrollRef.current.scrollLeft += amount;
   };
+
+  // useEffect(() => {
+  //   let ScrollTime = setInterval(() => {
+  //     if (scrollRef.current.scrollLeft < scrollRef.current.scrollWidth - 600) {
+  //       scrollRef.current.scrollLeft += 400;
+  //       console.log(scrollRef.current?.scrollWidth);
+  //       console.log(scrollRef.current?.scrollLeft);
+  //     } else {
+  //       scrollRef.current.scrollLeft = 0;
+  //     }
+  //   }, 2000);
+
+  //   return () => clearInterval(ScrollTime);
+  // }, []);
 
   return (
     <div className="  bg-base-100 px-10 py-5  md:px-20 md:py-10  gap-8 flex flex-col">
