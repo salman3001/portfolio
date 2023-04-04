@@ -48,8 +48,8 @@ const Navbar = ({ handelClick, open }: INavbar) => {
               />
             </div>
             <div className="px-4 sm:flex hidden items-center justify-center gap-3">
-              <a href="#resume">Resume</a> <a href="#">About Me</a>
-              <a href="#contact">Contact</a>
+              <a href="#resume">Resume</a> <a href="#aboutme">About Me</a>
+              <a href="#contactme">Contact</a>
               <a href="https://github.com/salman3001/" target="_blank">
                 <BsGithub />
               </a>

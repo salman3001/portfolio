@@ -18,11 +18,13 @@ const Skills = () => {
     setTab(e.target.innerHTML);
   };
   return (
-    <div className=" px-10 py-5  md:px-20 md:py-10 gap-8 flex flex-col">
-      <h1 id="skills" className="text-4xl font-bold">
-        Skills
-      </h1>
-      <div className="divider"></div>
+    <div className=" p-10 gap-8 flex flex-col">
+      <div>
+        <h1 id="skills" className="text-4xl font-bold">
+          My Skills
+        </h1>
+        <div className="divider"></div>
+      </div>
       <div className="flex  flex-col gap-6">
         <div>
           <div className="tabs justify-center sm:justify-start font-semibold">
@@ -75,7 +77,7 @@ const Skills = () => {
               Databases
             </a>
           </div>
-          <div className=" p-4 border-x border-b h-[350px] overflow-scroll scrollbar-hide">
+          <div className=" p-4 border-x border-b h-[350px] overflow-y-scroll">
             <div></div>
             {tab === "All" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">

@@ -88,6 +88,14 @@ export const skillsData = {
       name: "Next Auth",
       img: import.meta.env.VITE_BASE_URL + "/images/next-auth-logo.jpg",
     },
+    {
+      name: "Webpack",
+      img: import.meta.env.VITE_BASE_URL + "/images/webpack-logo.png",
+    },
+    {
+      name: "Babel",
+      img: import.meta.env.VITE_BASE_URL + "/images/babel-logo.png",
+    },
   ],
   testing: [
     {

@@ -25,11 +25,11 @@ const Hero = () => {
                 full Stack Web Applications.
               </span>
               <br />I am specialized in Mern Stack developments. I have
-              developed multiple projects using with Reactjs, ExpressJs, NestJs
-              Mongodb and many more libraries and framework. With in depth
-              knowledge of programming languages like typescript and javascript
-              i can develope the com[plex applications to meet the clients
-              need]. Check out my projects below.
+              developed multiple projects with Reactjs, ExpressJs, NestJs
+              Mongodb and many more libraries. With in depth knowledge of
+              programming languages like typescript and javascript i can
+              develope the complex applications to meet the clients need. Check
+              out my projects below.
               <div className="flex justify-center py-4 gap-4">
                 <a className="btn-1 group" href="#projects">
                   View Projects

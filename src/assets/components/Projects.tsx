@@ -25,14 +25,16 @@ const Projects = () => {
   // }, []);
 
   return (
-    <div className="  bg-base-100 px-10 py-5  md:px-20 md:py-10  gap-8 flex flex-col">
-      <h1 id="projects" className="text-4xl font-bold">
-        My Projects
-      </h1>
-      <div className="divider"></div>
+    <div className="  bg-base-100 p-10   gap-8 flex flex-col">
+      <div>
+        <h1 id="projects" className="text-4xl font-bold">
+          My Projects
+        </h1>
+        <div className="divider"></div>
+      </div>
       <div className="flex relative  items-center">
         <div
-          className="absolute cursor-pointer text-white top-[42%] left-[-50px] shadow-sm shadow-black bg-slate-200 bg-opacity-50 rounded-full p-2"
+          className="absolute cursor-pointer text-white top-[42%] left-[-50px] shadow-sm shadow-black bg-slate-500 bg-opacity-40 rounded-full p-2"
           onClick={() => scrollHandler(-200)}
         >
           <MdArrowBackIosNew size={50} />
@@ -55,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="absolute cursor-pointer shadow-sm shadow-black text-white top-[42%] right-[-50px] bg-slate-200 bg-opacity-50 rounded-full p-2"
+          className="absolute cursor-pointer shadow-sm shadow-black text-white top-[42%] right-[-50px] bg-slate-500 bg-opacity-40 rounded-full p-2"
           onClick={() => scrollHandler(200)}
         >
           <MdArrowForwardIos size={50} />
