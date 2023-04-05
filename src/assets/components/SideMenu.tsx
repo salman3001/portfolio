@@ -1,6 +1,7 @@
 import { Dispatch } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
 
 const SideMenu = ({
   setOpen,
@@ -19,7 +20,7 @@ const SideMenu = ({
       <a onClick={handleClick} href="#aboutme">
         About Me
       </a>
-      <a onClick={handleClick} href="#contactme">
+      <a onClick={handleClick} href="#contact">
         Contact
       </a>
       <a
@@ -35,6 +36,9 @@ const SideMenu = ({
         target="_blank"
       >
         <AiFillLinkedin />
+      </a>
+      <a href="mailto:therodfighter@gmail.com" target="_blank">
+        <MdOutlineEmail />
       </a>
     </div>
   );

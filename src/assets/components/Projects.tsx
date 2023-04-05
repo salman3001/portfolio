@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <div className="  bg-base-100 p-10   gap-8 flex flex-col">
       <div>
-        <h1 id="projects" className="text-4xl font-bold">
+        <h1 id="projects" className="text-4xl text-rose-700 font-bold">
           My Projects
         </h1>
         <div className="divider"></div>

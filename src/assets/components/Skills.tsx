@@ -18,9 +18,9 @@ const Skills = () => {
     setTab(e.target.innerHTML);
   };
   return (
-    <div className=" p-10 gap-8 flex flex-col">
+    <div className=" p-10 gap-8 flex flex-col bg">
       <div>
-        <h1 id="skills" className="text-4xl font-bold">
+        <h1 id="skills" className="text-4xl text-rose-700 font-bold">
           My Skills
         </h1>
         <div className="divider"></div>

@@ -3,6 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { CiBurger } from "react-icons/ci";
 import { useEffect, useState } from "react";
+import { MdOutlineEmail } from "react-icons/md";
 
 interface INavbar {
   handelClick: () => void;
@@ -47,9 +48,9 @@ const Navbar = ({ handelClick, open }: INavbar) => {
                 }}
               />
             </div>
-            <div className="px-4 sm:flex hidden items-center justify-center gap-3">
+            <div className="px-4 sm:flex hidden items-center justify-center gap-4">
               <a href="#resume">Resume</a> <a href="#aboutme">About Me</a>
-              <a href="#contactme">Contact</a>
+              <a href="#contact">Contact</a>
               <a href="https://github.com/salman3001/" target="_blank">
                 <BsGithub />
               </a>
@@ -58,6 +59,9 @@ const Navbar = ({ handelClick, open }: INavbar) => {
                 target="_blank"
               >
                 <AiFillLinkedin />
+              </a>
+              <a href="mailto:therodfighter@gmail.com" target="_blank">
+                <MdOutlineEmail />
               </a>
             </div>
             <div className="px-2 z-20 sm:hidden text-5xl flex items-center justify-center ">

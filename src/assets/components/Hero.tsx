@@ -18,7 +18,19 @@ const Hero = () => {
       <div className="hero">
         <div className="hero-overlay">
           <div className="container flex py-16 min-h-screen justify-center h-full  px-10 ">
-            <div className="flex flex-col  items-center justify-center">
+            <div className="flex flex-col  items-center justify-center max-w-5xl">
+              {/* avatar */}
+              <div className="avatar py-5">
+                <div className="w-40 rounded-full">
+                  <img
+                    src={
+                      import.meta.env.VITE_BASE_URL +
+                      "/images/profile-pic-sm.jpg"
+                    }
+                    alt=""
+                  />
+                </div>
+              </div>
               <span className="text-2xl">
                 Hi there! I am{" "}
                 <span className="text-rose-700 text-3xl">Salman</span>, I Make

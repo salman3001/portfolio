@@ -4,21 +4,21 @@ const AboutMe = () => {
   return (
     <div id="aboutme" className="  bg-base-100 p-10 flex flex-col">
       <div>
-        <h1 id="projects" className="text-4xl font-bold">
+        <h1 id="projects" className="text-4xl text-rose-700 font-bold">
           About Me
         </h1>
         <div className="divider"></div>
       </div>
-      <div className="max-w-5xl">
+      <div className="max-w-5xl font-semi-bold">
         <div>
           <p>
-            Hi, I am Salman.I am a self tought full stack developer sepcialized
-            in mern stack development. I am a very quick learner and easily
-            adapting to new technologies. Below are some of the keypoints i am
-            capable in.{" "}
+            My name is Salman. I live in Sharjah, UAE. I am a self tought full
+            stack developer sepcialized in mern stack development. I am a very
+            quick learner and easily adapting to new technologies. Below are
+            some of the keypoints i am good at :-{" "}
           </p>
         </div>
-        <ul className="p-5 flex flex-col gap-2">
+        <ul className="px-10 pt-5 italic flex flex-col gap-2 list-disc opacity-80">
           <li>Developing beaitifull and intractve UI with React js.</li>
           <li>
             Managing App state by global state manager like redux and context
@@ -60,8 +60,6 @@ const AboutMe = () => {
             Static site generation and hybrid app (client + server) development
             with next js.
           </li>
-
-          <li></li>
         </ul>
       </div>
     </div>

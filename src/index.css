@@ -25,7 +25,16 @@ svg {
 }
 
 .hero-overlay {
-  @apply min-h-screen w-full  flex justify-center bg-gradient-to-r from-black via-black to-transparent opacity-95;
+  @apply min-h-screen w-full  flex justify-center;
+  background: radial-gradient(
+      96.8% 234.56% at 100% 22.51%,
+      #000000 0%,
+      rgba(0, 0, 0, 0.2) 0.01%,
+      rgba(0, 0, 0, 0.75) 35.52%,
+      rgba(0, 0, 0, 0.87) 60.21%,
+      #000000 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
 .btn-1 {
