@@ -1,36 +1,57 @@
 import axios from "axios";
-import { FormEvent, FormEventHandler, useState } from "react";
+import { FormEvent, FormEventHandler, useEffect, useState } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import ReCaptcha from "./ReCaptcha";
 
 const Contact = () => {
   const [username, setusername] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitstat, setsubmitState] = useState(false);
+  const [num1, setNum1] = useState<number>(Math.floor(Math.random() * 100));
+  const [num2, setNum2] = useState<number>(Math.floor(Math.random() * 10));
+  const [result, setRsult] = useState<number>();
 
   const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setsubmitState(true);
-    try {
-      const res = await axios.post(import.meta.env.VITE_EMAIL_URL, {
-        username,
-        email,
-        message,
-      });
-      alert(
-        `Hello Mr/Ms. ${username}!. Thanks for contacting, I will get to you shortly`
-      );
-      setusername("");
-      setEmail("");
-      setMessage("");
+    console.log(result);
+    console.log(num1 + num2);
+
+    if (Number(result) === num1 + num2) {
+      try {
+        // const res = await axios.post(import.meta.env.VITE_EMAIL_URL, {
+        //   username,
+        //   email,
+        //   message,
+        // });
+        alert(
+          `Hello Mr/Ms. ${username}!. Thanks for contacting, I will get to you shortly`
+        );
+        setusername("");
+        setEmail("");
+        setMessage("");
+        setNum1(Math.floor(Math.random() * 100));
+        setNum2(Math.floor(Math.random() * 10));
+        setRsult(0);
+        setsubmitState(false);
+      } catch (error) {
+        alert(
+          "Sorry, There was an an while processing you request! Please contact me through social links and email"
+        );
+        setsubmitState(false);
+        setNum1(Math.floor(Math.random() * 100));
+        setNum2(Math.floor(Math.random() * 10));
+        setRsult(0);
+      }
+    } else {
+      alert("reCaptcha did not match. Please try again");
       setsubmitState(false);
-    } catch (error) {
-      alert(
-        "Sorry, There was an an while processing you request! Please contact me through social links and email"
-      );
-      setsubmitState(false);
+      setNum1(Math.floor(Math.random() * 100));
+      setNum2(Math.floor(Math.random() * 10));
+      setRsult(0);
     }
   };
   return (
@@ -95,6 +116,15 @@ const Contact = () => {
                   onChange={(e) => {
                     setMessage(e.target.value);
                   }}
+                />
+              </div>
+              <div className="flex flex-col justify-start w-full items-start gap-4">
+                <p className="opacity-60">reCAPTCHA</p>
+                <ReCaptcha
+                  num1={num1}
+                  num2={num2}
+                  captcha={result}
+                  setCaptcha={setRsult}
                 />
               </div>
               <button
