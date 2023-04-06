@@ -12,8 +12,6 @@ interface INavbar {
 const Navbar = ({ handelClick, open }: INavbar) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const navigate = useNavigate();
-
   useEffect(() => {
     const handelScroll = () => {
       setScrollPosition(window.scrollY);
@@ -40,12 +38,9 @@ const Navbar = ({ handelClick, open }: INavbar) => {
           <div className="container  justify-between mx-auto w-full h-full flex">
             <div className="flex px-4">
               <img
-                src="/images/SK-logo.png"
+                src={import.meta.env.VITE_BASE_URL + "/images/SK-logo.png"}
                 className="cursor-pointer hover:animate-pulse z-20"
                 alt="SK"
-                onClick={() => {
-                  navigate("/");
-                }}
               />
             </div>
             <div className="px-4 sm:flex hidden items-center justify-center gap-4">

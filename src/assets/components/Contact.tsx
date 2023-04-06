@@ -22,11 +22,11 @@ const Contact = () => {
 
     if (Number(result) === num1 + num2) {
       try {
-        // const res = await axios.post(import.meta.env.VITE_EMAIL_URL, {
-        //   username,
-        //   email,
-        //   message,
-        // });
+        const res = await axios.post(import.meta.env.VITE_EMAIL_URL, {
+          username,
+          email,
+          message,
+        });
         alert(
           `Hello Mr/Ms. ${username}!. Thanks for contacting, I will get to you shortly`
         );

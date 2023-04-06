@@ -81,74 +81,74 @@ const Skills = () => {
             <div></div>
             {tab === "All" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.languages.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.languages.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.frameworks.frontend.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.frameworks.frontend.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.frameworks.backend.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.frameworks.backend.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.ui.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.ui.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.liberaries.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.liberaries.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.Db.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.Db.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
-                {skillsData.testing.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.testing.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
             {tab === "Languages" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.languages.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.languages.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
 
             {tab === "Frameworks" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.frameworks.frontend.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.frameworks.frontend.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
 
-                {skillsData.frameworks.backend.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.frameworks.backend.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
             {tab === "UI" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.ui.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.ui.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
             {tab === "Liberaries" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
                 {" "}
-                {skillsData.liberaries.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.liberaries.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
             {tab === "Databases" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.Db.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.Db.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}
             {tab === "Testing" && (
               <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.testing.map((skill) => (
-                  <SkillsCard name={skill.name} img={skill.img} />
+                {skillsData.testing.map((skill, index) => (
+                  <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}
               </div>
             )}

@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import SideMenu from "./SideMenu";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
 
   const handelClick = () => {
     setOpen((state: boolean) => (state === true ? false : true));
@@ -17,7 +15,7 @@ const Hero = () => {
       {open && <SideMenu setOpen={setOpen} />}
       <div
         className={`hero ${
-          import.meta.env.VITE_BASE_URL != ""
+          import.meta.env.VITE_BASE_URL !== ""
             ? "sm:bg-[url('/portfolio/images/profile-pic.jpg')] bg-[url('/portfolio/images/profile-pic-sm.jpg')]"
             : "sm:bg-[url('/images/profile-pic.jpg')] bg-[url('/images/profile-pic-sm.jpg')]"
         }`}
