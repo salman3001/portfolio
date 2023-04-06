@@ -26,7 +26,7 @@ const Trainings = () => {
             <a
               href={training.link}
               target="_blank"
-              className="tooltip tooltip-info text-start underline"
+              className="tooltip tooltip-info text-start text-xl underline"
               data-tip="Click to check certificate"
             >
               {training.name}

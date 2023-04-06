@@ -81,6 +81,10 @@ export const skillsData = {
       img: import.meta.env.VITE_BASE_URL + "/images/passport-logo.png",
     },
     {
+      name: "NodeMailer",
+      img: import.meta.env.VITE_BASE_URL + "/images/node-mailer-logo.png",
+    },
+    {
       name: "JWT",
       img: import.meta.env.VITE_BASE_URL + "/images/jwt-logo.png",
     },

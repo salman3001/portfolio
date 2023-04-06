@@ -34,10 +34,10 @@ const Projects = () => {
       </div>
       <div className="flex relative  items-center">
         <div
-          className="absolute cursor-pointer text-white top-[42%] left-[-50px] shadow-sm shadow-black bg-slate-500 bg-opacity-40 rounded-full p-2"
+          className="absolute cursor-pointer text-rose-400 top-[42%] left-[-50px] shadow-sm  bg-slate-500 bg-opacity-20 rounded-full p-2"
           onClick={() => scrollHandler(-200)}
         >
-          <MdArrowBackIosNew size={50} />
+          <MdArrowBackIosNew size={40} />
         </div>
 
         <div
@@ -57,10 +57,10 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="absolute cursor-pointer shadow-sm shadow-black text-white top-[42%] right-[-50px] bg-slate-500 bg-opacity-40 rounded-full p-2"
+          className="absolute cursor-pointer shadow-sm  text-rose-400 top-[42%] right-[-50px] bg-slate-500 bg-opacity-20 rounded-full p-2"
           onClick={() => scrollHandler(200)}
         >
-          <MdArrowForwardIos size={50} />
+          <MdArrowForwardIos size={40} />
         </div>
       </div>
     </div>

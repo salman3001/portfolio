@@ -20,8 +20,8 @@ svg {
 
 .hero {
   @apply min-h-screen w-full flex justify-center items-center mx-auto;
-  background-image: url("/images/profile-pic.jpg");
-  background-position: left;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-overlay {

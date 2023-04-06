@@ -9,10 +9,10 @@ const AboutMe = () => {
         </h1>
         <div className="divider"></div>
       </div>
-      <div className="max-w-5xl font-semi-bold">
+      <div className="max-w-5xl sm:px-10 font-semi-bold">
         <div>
           <p>
-            My name is Salman. I live in Sharjah, UAE. I am a self tought full
+            My name is Salman. I live in Sharjah, UAE. I am a self taught full
             stack developer sepcialized in mern stack development. I am a very
             quick learner and easily adapting to new technologies. Below are
             some of the keypoints i am good at :-{" "}
@@ -26,7 +26,7 @@ const AboutMe = () => {
           </li>
           <li>Fetching the data from rest api's and displaying in the app.</li>
           <li>
-            Usinh RTK query,Axios to manage the rest api's at clent side with
+            Using RTK query,Axios to manage the rest api's at clent side with
             data validation and invalidation.
           </li>
           <li>Form validation with libraries like formik and joe.</li>
@@ -46,8 +46,12 @@ const AboutMe = () => {
             with express sesions, jwt auth, O-auth with google, facebook, github
             etc, cookie base auth .
           </li>
-          <li> Creatng Rest api server with nestjs and expressjs.</li>
+          <li> Creating Rest api server with nestjs and expressjs.</li>
           <li>Server side rendering with MVC pattern.</li>
+          <li>
+            Generating automated email responses from on node server using
+            nodemailer
+          </li>
           <li>
             Working with mongodb database. Query, sorting, filtering and
             searching data.

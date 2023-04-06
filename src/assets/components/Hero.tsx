@@ -15,12 +15,18 @@ const Hero = () => {
     <>
       <Navbar handelClick={handelClick} open={open} />
       {open && <SideMenu setOpen={setOpen} />}
-      <div className="hero">
+      <div
+        className={`hero ${
+          import.meta.env.VITE_BASE_URL != ""
+            ? "sm:bg-[url('/portfolio/images/profile-pic.jpg')] bg-[url('/portfolio/images/profile-pic-sm.jpg')]"
+            : "sm:bg-[url('/images/profile-pic.jpg')] bg-[url('/images/profile-pic-sm.jpg')]"
+        }`}
+      >
         <div className="hero-overlay">
           <div className="container flex py-16 min-h-screen justify-center h-full  px-10 ">
             <div className="flex flex-col  items-center justify-center max-w-5xl">
               {/* avatar */}
-              <div className="avatar py-5">
+              {/* <div className="avatar py-5">
                 <div className="w-40 rounded-full">
                   <img
                     src={
@@ -30,7 +36,7 @@ const Hero = () => {
                     alt=""
                   />
                 </div>
-              </div>
+              </div> */}
               <span className="text-2xl">
                 Hi there! I am{" "}
                 <span className="text-rose-700 text-3xl">Salman</span>, I Make

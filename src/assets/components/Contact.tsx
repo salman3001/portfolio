@@ -1,8 +1,38 @@
+import axios from "axios";
+import { FormEvent, FormEventHandler, useState } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
+  const [username, setusername] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitstat, setsubmitState] = useState(false);
+
+  const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setsubmitState(true);
+    try {
+      const res = await axios.post(import.meta.env.VITE_EMAIL_URL, {
+        username,
+        email,
+        message,
+      });
+      alert(
+        `Hello Mr/Ms. ${username}!. Thanks for contacting, I will get to you shortly`
+      );
+      setusername("");
+      setEmail("");
+      setMessage("");
+      setsubmitState(false);
+    } catch (error) {
+      alert(
+        "Sorry, There was an an while processing you request! Please contact me through social links and email"
+      );
+      setsubmitState(false);
+    }
+  };
   return (
     <div id="contact" className="  bg-base-100 p-10 flex flex-col gap-4">
       <div>
@@ -10,34 +40,46 @@ const Contact = () => {
           Lets Connect
         </h1>
         <div className="divider"></div>
-        <p className="opacity-60">
-          Enter your details below. I will contact you shortly
-        </p>
+        <p className="opacity-60">Enter your details below.</p>
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="w-[350px] flex justify-center items-center flex-col gap-4">
           <div className="w-full">
-            <form action="" className="flex flex-col gap-4">
+            <form
+              action=""
+              className="flex flex-col gap-4"
+              onSubmit={submitHandler}
+            >
               <div>
-                <label htmlFor="name" className="label opacity-60">
+                <label htmlFor="username" className="label opacity-60">
                   Name
                 </label>
                 <input
                   type="text"
                   required
-                  name="name"
-                  className="input input-secondary w-full"
+                  minLength={2}
+                  maxLength={20}
+                  name="username"
+                  className="input invalid:input-error input-secondary w-full"
+                  value={username}
+                  onChange={(e) => {
+                    setusername(e.target.value);
+                  }}
                 />
               </div>
               <div>
-                <label htmlFor="emial" className="label opacity-60">
+                <label htmlFor="email" className="label opacity-60">
                   Email Id
                 </label>
                 <input
                   type="email"
                   required
                   name="email"
-                  className="input input-secondary w-full"
+                  className="input invalid:input-error input-secondary w-full"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 />
               </div>
               <div>
@@ -46,11 +88,25 @@ const Contact = () => {
                 </label>
                 <textarea
                   required
+                  maxLength={200}
                   name="name"
-                  className="textarea textarea-secondary w-full"
+                  className="textarea invalid:textarea-error textarea-secondary w-full"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
                 />
               </div>
-              <button className="btn-1 hover:bg-rose-700 w-full">Submit</button>
+              <button
+                disabled={submitstat ? true : false}
+                className="btn-1 disabled:bg-rose-300 hover:bg-rose-700 w-full "
+              >
+                {submitstat === false ? (
+                  "Submit"
+                ) : (
+                  <div className=" h-11 w-11 rounded-full border-2 border-t-transparent animate-spin  border-white"></div>
+                )}
+              </button>
             </form>
           </div>
           <div className="divider"> or </div>
