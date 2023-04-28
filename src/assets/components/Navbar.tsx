@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
-import { CiBurger } from "react-icons/ci";
+import { BiMenu } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -35,8 +35,8 @@ const Navbar = ({ handelClick, open }: INavbar) => {
             "text-black bg-base-100 shadow-lg"
           }  fixed h-[8%]  w-full  z-30`}
         >
-          <div className="container  justify-between mx-auto w-full h-full flex">
-            <div className="flex px-4">
+          <div className="padding-1 justify-between mx-auto w-full h-full flex">
+            <div className="flex ">
               <img
                 src={import.meta.env.VITE_BASE_URL + "/images/SK-logo.png"}
                 className="cursor-pointer hover:animate-pulse z-20"
@@ -44,7 +44,9 @@ const Navbar = ({ handelClick, open }: INavbar) => {
               />
             </div>
             <div className="px-4 sm:flex hidden items-center justify-center gap-4">
-              <a href="#resume">Resume</a> <a href="#aboutme">About Me</a>
+              <a href="#resume">Resume</a>
+              <a href="#experience">Experience</a>{" "}
+              <a href="#aboutme">About Me</a>
               <a href="#contact">Contact</a>
               <a href="https://github.com/salman3001/" target="_blank">
                 <BsGithub />
@@ -60,7 +62,7 @@ const Navbar = ({ handelClick, open }: INavbar) => {
               </a>
             </div>
             <div className="px-2 z-20 sm:hidden text-5xl flex items-center justify-center ">
-              <CiBurger onClick={handelClick} style={{ fontSize: "inherit" }} />
+              <BiMenu onClick={handelClick} size={25} />
             </div>
           </div>
         </div>

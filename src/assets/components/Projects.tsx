@@ -25,16 +25,16 @@ const Projects = () => {
   // }, []);
 
   return (
-    <div className="  bg-base-100 p-10   gap-8 flex flex-col">
+    <div className="  bg-base-100 padding-1 padding-2   gap-8 flex flex-col">
       <div>
         <h1 id="projects" className="text-4xl text-rose-700 font-bold">
-          My Projects
+          Projects
         </h1>
         <div className="divider"></div>
       </div>
       <div className="flex relative  items-center">
         <div
-          className="absolute cursor-pointer text-rose-400 top-[42%] left-[-50px] shadow-sm  bg-slate-500 bg-opacity-20 rounded-full p-2"
+          className="absolute cursor-pointer text-rose-400 top-[42%] left-[-10px] shadow-sm  bg-slate-500 bg-opacity-20 rounded-full p-2"
           onClick={() => scrollHandler(-200)}
         >
           <MdArrowBackIosNew size={40} />
@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="absolute cursor-pointer shadow-sm  text-rose-400 top-[42%] right-[-50px] bg-slate-500 bg-opacity-20 rounded-full p-2"
+          className="absolute cursor-pointer shadow-sm  text-rose-400 top-[42%] right-[-10px] bg-slate-500 bg-opacity-20 rounded-full p-2"
           onClick={() => scrollHandler(200)}
         >
           <MdArrowForwardIos size={40} />

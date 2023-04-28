@@ -18,10 +18,10 @@ const Skills = () => {
     setTab(e.target.innerHTML);
   };
   return (
-    <div className=" p-10 gap-8 flex flex-col bg">
+    <div className=" padding-1 padding-2  gap-8 flex flex-col bg">
       <div>
         <h1 id="skills" className="text-4xl text-rose-700 font-bold">
-          My Skills
+          Skills
         </h1>
         <div className="divider"></div>
       </div>
@@ -77,10 +77,9 @@ const Skills = () => {
               Databases
             </a>
           </div>
-          <div className=" p-4 border-x border-b h-[350px] overflow-y-scroll">
-            <div></div>
+          <div className=" p-4 border-x border-b h-[350px] overflow-y-scroll ">
             {tab === "All" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+              <div className="flex flex-wrap justify-center  items-center gap-4 h-full">
                 {skillsData.languages.map((skill, index) => (
                   <SkillsCard key={index} name={skill.name} img={skill.img} />
                 ))}

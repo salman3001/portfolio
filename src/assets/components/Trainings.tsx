@@ -13,20 +13,20 @@ const Trainings = () => {
   };
 
   return (
-    <div className="  bg-base-100 p-10 flex flex-col">
+    <div className="  bg-base-100  padding-1 padding-2  flex flex-col">
       <div>
         <h1 id="projects" className="text-4xl text-rose-700 font-bold">
-          My Trainings
+          Trainings
         </h1>
         <div className="divider"></div>
       </div>
-      <ul className="flex pl-5 flex-col justify-center gap-4   ">
+      <ul className="flex pl-2 flex-col justify-center gap-4  max-w-lg">
         {trainingData.map((training) => (
-          <li className="flex justify-between">
+          <li className="flex justify-between border-b-2 border-rose-300 p-2">
             <a
               href={training.link}
               target="_blank"
-              className="tooltip tooltip-info text-start text-xl underline"
+              className="tooltip tooltip-info text-start text-xl "
               data-tip="Click to check certificate"
             >
               {training.name}

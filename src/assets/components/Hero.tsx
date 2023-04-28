@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <Navbar handelClick={handelClick} open={open} />
-      {open && <SideMenu setOpen={setOpen} />}
+      <SideMenu open={open} setOpen={setOpen} />
       <div
         className={`hero ${
           import.meta.env.VITE_BASE_URL !== ""
@@ -21,7 +21,7 @@ const Hero = () => {
         }`}
       >
         <div className="hero-overlay">
-          <div className="container flex py-16 min-h-screen justify-center h-full  px-10 ">
+          <div className="flex min-h-screen justify-center h-full  padding-1 padding-2">
             <div className="flex flex-col  items-center justify-center max-w-5xl">
               {/* avatar */}
               {/* <div className="avatar py-5">
@@ -35,7 +35,7 @@ const Hero = () => {
                   />
                 </div>
               </div> */}
-              <span className="text-2xl">
+              <span className="text-2xl text-left w-full">
                 Hi there! I am{" "}
                 <span className="text-rose-700 text-3xl">Salman</span>, I Make
                 full Stack Web Applications.
@@ -46,7 +46,7 @@ const Hero = () => {
               programming languages like typescript and javascript i can
               develope the complex applications to meet the clients need. Check
               out my projects below.
-              <div className="flex justify-center py-4 gap-4">
+              <div className="flex justify-start py-4 gap-4 w-full">
                 <a className="btn-1 group" href="#projects">
                   View Projects
                   <AiOutlineArrowRight className="group-hover:rotate-90 transition-transform" />

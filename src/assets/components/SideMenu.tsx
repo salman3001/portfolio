@@ -5,7 +5,9 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const SideMenu = ({
   setOpen,
+  open,
 }: {
+  open: boolean;
   setOpen: Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const handleClick = () => {
@@ -13,9 +15,22 @@ const SideMenu = ({
   };
 
   return (
-    <div className="flex flex-col text-xl bg-gradient-to-tl to-black from-gray-800 sm:hidden h-screen fixed gap-8 w-full justify-center items-center z-10 ">
-      <a onClick={handleClick} href="#r">
+    <div
+      className={`flex flex-col text-xl bg-gradient-to-tl to-black from-gray-800 sm:hidden h-screen fixed  ${
+        open ? "translate-x-0" : "translate-x-full"
+      } gap-8 w-full  justify-center items-center z-10 transition-transform`}
+    >
+      <a onClick={handleClick} href="#resume">
         Resume
+      </a>{" "}
+      <a onClick={handleClick} href="#skills">
+        Skills
+      </a>{" "}
+      <a onClick={handleClick} href="#projects">
+        Projects
+      </a>{" "}
+      <a onClick={handleClick} href="#experience">
+        Experience
       </a>{" "}
       <a onClick={handleClick} href="#aboutme">
         About Me

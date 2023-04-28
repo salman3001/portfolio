@@ -103,7 +103,7 @@ export const skillsData = {
   ],
   testing: [
     {
-      name: "Jest testing liberary",
+      name: "Jest testing",
       img: import.meta.env.VITE_BASE_URL + "/images/jest-logo.png",
     },
   ],

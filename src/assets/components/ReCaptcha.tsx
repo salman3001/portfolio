@@ -15,7 +15,7 @@ const ReCaptcha = (prop: IRecaptcha) => {
       <span>{prop.num2}</span>
       <span>=</span>
       <input
-        className="input input-secondary w-24 inline"
+        className="input input-bordered w-24 inline"
         type="number"
         name="captcha"
         value={prop.captcha}
