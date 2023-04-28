@@ -12,11 +12,10 @@ const Resume = () => {
           Resume
         </h1>
         <div className="divider"></div>
-        <div className="flex flex-col justify-center items-center gap-8 text-rose-500">
-          <p className="text-black text-2xl font-bold text-center">
-            Click to download My Resume{" "}
-          </p>
-          <BsDownload size={50} />
+        <div className="flex flex-col justify-center items-center gap-8 text-rose-500 cursor-pointer">
+          <a className="text-black flex-wrap justify-center flex gap-2 text-2xl underline py-6 text-center">
+            <BsDownload size={30} /> Click to download My Resume
+          </a>
         </div>
       </div>
     </div>

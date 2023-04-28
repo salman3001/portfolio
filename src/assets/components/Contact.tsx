@@ -73,7 +73,7 @@ const Contact = () => {
         <p className="opacity-60">Enter your details below.</p>
       </div>
       <div className="w-full flex justify-center items-center">
-        <div className="w-[768px] flex justify-center items-center flex-col gap-8">
+        <div className="w-96 flex justify-center items-center flex-col gap-8">
           <div className="w-full">
             <form
               action=""

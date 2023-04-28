@@ -77,82 +77,84 @@ const Skills = () => {
               Databases
             </a>
           </div>
-          <div className=" p-4 border-x border-b h-[350px] overflow-y-scroll ">
-            {tab === "All" && (
-              <div className="flex flex-wrap justify-center  items-center gap-4 h-full">
-                {skillsData.languages.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.frameworks.frontend.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.frameworks.backend.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.ui.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.liberaries.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.Db.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-                {skillsData.testing.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
-            {tab === "Languages" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.languages.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
+          <div className=" shadow-gray-400 shadow-inner pt-[4px]">
+            <div className=" border-x border-b h-[350px] overflow-y-scroll ">
+              {tab === "All" && (
+                <div className="flex my-5 flex-wrap justify-center  items-center gap-4 h-full">
+                  {skillsData.languages.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.frameworks.frontend.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.frameworks.backend.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.ui.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.liberaries.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.Db.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                  {skillsData.testing.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
+              {tab === "Languages" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {skillsData.languages.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
 
-            {tab === "Frameworks" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.frameworks.frontend.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
+              {tab === "Frameworks" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {skillsData.frameworks.frontend.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
 
-                {skillsData.frameworks.backend.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
-            {tab === "UI" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.ui.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
-            {tab === "Liberaries" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {" "}
-                {skillsData.liberaries.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
-            {tab === "Databases" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.Db.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
-            {tab === "Testing" && (
-              <div className="flex flex-wrap justify-center items-center gap-4 h-full">
-                {skillsData.testing.map((skill, index) => (
-                  <SkillsCard key={index} name={skill.name} img={skill.img} />
-                ))}
-              </div>
-            )}
+                  {skillsData.frameworks.backend.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
+              {tab === "UI" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {skillsData.ui.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
+              {tab === "Liberaries" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {" "}
+                  {skillsData.liberaries.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
+              {tab === "Databases" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {skillsData.Db.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
+              {tab === "Testing" && (
+                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                  {skillsData.testing.map((skill, index) => (
+                    <SkillsCard key={index} name={skill.name} img={skill.img} />
+                  ))}
+                </div>
+              )}
 
-            {/* aad */}
+              {/* aad */}
+            </div>
           </div>
         </div>
       </div>
