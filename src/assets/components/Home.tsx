@@ -10,9 +10,9 @@ import Resume from "./Resume";
 
 export const Home = () => {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base1">
       <Hero />
-      <div className="text-black mx-auto bg-base-100">
+      <div className="text-black mx-auto bg-base1">
         <Projects />
         <Skills />
         <Experience />

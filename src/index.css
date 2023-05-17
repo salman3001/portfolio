@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 13px;
+  background-color: #0c1315;
 }
 
 a {
@@ -17,6 +17,22 @@ body {
 
 svg {
   @apply hover:text-rose-700 transition-colors;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  left: -100px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border: solid 3px white;
+  border-radius: 6px;
 }
 
 .hero {

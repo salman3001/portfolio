@@ -21,42 +21,34 @@ const Hero = () => {
         }`}
       >
         <div className="hero-overlay">
-          <div className="flex min-h-screen justify-center h-full  padding-1 padding-2">
-            <div className="flex flex-col  items-center justify-center max-w-5xl">
-              {/* avatar */}
-              {/* <div className="avatar py-5">
-                <div className="w-40 rounded-full">
-                  <img
-                    src={
-                      import.meta.env.VITE_BASE_URL +
-                      "/images/profile-pic-sm.jpg"
-                    }
-                    alt=""
-                  />
-                </div>
-              </div> */}
-              <span className="text-2xl text-left w-full">
-                Hi there! I am{" "}
-                <span className="text-rose-700 text-3xl">Salman</span>, I Make
-                full Stack Web Applications.
-              </span>
-              <br />I am specialized in Mern Stack developments. I have
-              developed multiple projects with Reactjs, ExpressJs, NestJs
-              Mongodb and many more libraries. With in depth knowledge of
-              programming languages like typescript and javascript i can
-              develope the complex applications to meet the clients need. Check
-              out my projects below.
-              <div className="flex justify-start py-4 gap-4 w-full">
-                <a className="btn-1 group" href="#projects">
-                  View Projects
-                  <AiOutlineArrowRight className="group-hover:rotate-90 transition-transform" />
-                </a>
-                <a href="#skills" className="btn-2 group">
-                  View Skills{" "}
-                  <div>
+          <div className="flex min-h-screen  w-full h-full  padding-1 padding-2">
+            <div className="flex flex-col   justify-center max-w-5xl pb-10 pt-20">
+              <div className="space-y-8">
+                <span className="text-5xl text-left w-full">
+                  Hi there! I am <span className="text-rose-700 ">Salman</span>,
+                  I Make full Stack Web Applications.
+                </span>
+
+                <p className="text-2xl">
+                  I am specialized in Mern Stack developments. I have developed
+                  multiple projects with Reactjs, ExpressJs, NestJs Mongodb and
+                  many more libraries. With in depth knowledge of programming
+                  languages like typescript and javascript i can develope the
+                  complex applications to meet the clients need. Check out my
+                  projects below.
+                </p>
+                <div className="flex justify-start py-4 gap-4 w-full">
+                  <a className="btn-1 group" href="#projects">
+                    View Projects
                     <AiOutlineArrowRight className="group-hover:rotate-90 transition-transform" />
-                  </div>
-                </a>
+                  </a>
+                  <a href="#skills" className="btn-2 group">
+                    View Skills{" "}
+                    <div>
+                      <AiOutlineArrowRight className="group-hover:rotate-90 transition-transform" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
