@@ -7,6 +7,12 @@ export const projectData = [
     link: "https://salman3001.github.io/laundramoon-frontend-react/",
   },
   {
+    title: "Taste Models London - frontend (Under development)",
+    img: import.meta.env.VITE_BASE_URL + "/images/taste-model.png",
+    description: "Online model booking and escort services app.",
+    link: "https://salman3001.github.io/taste-models-london/",
+  },
+  {
     title: "Javansurksha - Web Landing page",
     img: import.meta.env.VITE_BASE_URL + "/images/jivansurksha.png",
     description: "A landing page created for jivansurksha website",
@@ -14,7 +20,7 @@ export const projectData = [
   },
   {
     title: "BuyZone Ecommerce App",
-    img: import.meta.env.VITE_BASE_URL + "/images/mern-logo.png",
+    img: import.meta.env.VITE_BASE_URL + "/images/buyzone.png",
     description:
       "This is a full stack MERN Ecommerce application. It has many features like, cart, Reviews, authentication, Roles, products sorting and filtering , products search and more. Tools used are react, redux, RTK query, react rounter, MUI etc",
     link: "https://salman3001.github.io/buyzone-ecommerce-app-mern/",
@@ -23,7 +29,7 @@ export const projectData = [
     title: "Multi App Server -Nest Js",
     img: import.meta.env.VITE_BASE_URL + "/images/nestjs.png",
     description:
-      "Nodejs backened project developed with nestjs framework. Serviing Rest API's to my multiple demo apps. Deployed on Render.com with free hosting plan.",
+      "Nodejs backened project developed with nestjs framework. Serviing Rest API's to my multiple demo apps. Deployed on Render.com.",
     link: "https://github.com/salman3001/nestjs-server/",
   },
   {
@@ -34,17 +40,17 @@ export const projectData = [
     link: "https://salman3001.github.io/calculator-react/",
   },
   {
-    title: "Figma Project (Paid)",
+    title: "Figma Project",
     img: import.meta.env.VITE_BASE_URL + "/images/figma-logo.png",
     description:
-      "This was a paid project i delveloped for client. A figma template was converted to HTML pages. Explore the developed pages.",
+      "A figma template was converted to HTML pages using tailwind CSS on clients request. Explore the developed pages.",
     link: "https://salman3001.github.io/figma-project-1/",
   },
   {
     title: "Buyzone Express server",
     img: import.meta.env.VITE_BASE_URL + "/images/express.png",
     description:
-      "Nodejs backend project using Expressjs framework. it was initially developed to serve as backened for my buyzone ecommerce application.",
+      "Nodejs backend project using Expressjs framework. With crud and i,age upload functionality",
     link: "https://github.com/salman3001/buyzone-express-server/",
   },
   {
@@ -67,11 +73,5 @@ export const projectData = [
     description:
       "This project was developed during my front development course by META as a final assignment project. Includes state management, form validations etc",
     link: "https://salman3001.github.io/meta-final-project/",
-  },
-  {
-    title: "A CV template",
-    img: import.meta.env.VITE_BASE_URL + "/images/CV.png",
-    description: "A CV template created using HTML and tailwind CSS.",
-    link: "https://salman3001.github.io/cv-app/",
   },
 ];

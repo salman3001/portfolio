@@ -7,7 +7,7 @@ const AboutMe = () => {
       className="  bg-base-100 padding-1 padding-2  flex flex-col"
     >
       <div>
-        <h1 id="projects" className="text-4xl text-rose-700 font-bold">
+        <h1 id="projects" className="text-4xl font-bold">
           About Me
         </h1>
         <div className="divider"></div>
@@ -22,21 +22,22 @@ const AboutMe = () => {
           </p>
         </div>
         <ul className="pl-7 pt-5 italic flex flex-col gap-2 list-disc opacity-80">
-          <li>Developing beaitifull and intractve UI with React js.</li>
+          <li>Developing beautifull and intractve UI with React js.</li>
+
+          <li>
+            Working with Material UI designs, Bootstrap, styled components,
+            tailwing CSS and vanila CSS.
+          </li>
           <li>
             Managing App state by global state manager like redux and context
             api's.
           </li>
           <li>Fetching the data from rest api's and displaying in the app.</li>
           <li>
-            Using RTK query,Axios to manage the rest api's at clent side with
+            Using RTK query, Axios to manage the rest api's at clent side with
             data validation and invalidation.
           </li>
-          <li>Form validation with libraries like formik and joe.</li>
-          <li>
-            Working with Material UI designs,styled components, tailwing CSS and
-            vanila CSS.
-          </li>
+          <li>Form validation with libraries like formik.</li>
           <li>Code version control with git and github.</li>
           <li>client side authentication and route protection.</li>
           <li>
@@ -64,8 +65,8 @@ const AboutMe = () => {
           </li>
           <li>Basic knowledge about webpack and babel.</li>
           <li>
-            Static site generation and hybrid app (client + server) development
-            with next js.
+            Static site generation and hybrid apps (client + server) development
+            with next js or mixing react with templating engine like ejs.
           </li>
         </ul>
       </div>

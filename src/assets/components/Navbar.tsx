@@ -42,17 +42,17 @@ const Navbar = ({ handelClick, open }: INavbar) => {
           }  fixed h-[8%]  w-full  z-30`}
         >
           <div className="padding-1 justify-between mx-auto w-full h-full flex">
-            <div className="flex">
-              <img
-                src={import.meta.env.VITE_BASE_URL + "/images/SK-logo.png"}
-                className="cursor-pointer hover:animate-pulse z-20"
-                alt="SK"
+            <div className="flex justify-center items-center">
+              <p
+                className="text-2xl italic font-bold text-rose-700 border  border-rose-700  flex justify-center items-center h-10 w-10 cursor-pointer"
                 onClick={() => {
                   navigate("/");
                 }}
-              />
+              >
+                SK
+              </p>
             </div>
-            <div className="px-4 sm:flex hidden items-center justify-center gap-4">
+            <div className="px-4 sm:flex hidden items-center justify-center gap-8">
               <a href="#resume">Resume</a>
               <a href="#experience">Experience</a>{" "}
               <a href="#aboutme">About Me</a>
@@ -71,7 +71,7 @@ const Navbar = ({ handelClick, open }: INavbar) => {
               </a>
             </div>
             <div className="px-2 z-20 sm:hidden text-5xl flex items-center justify-center ">
-              <BiMenu onClick={handelClick} size={25} />
+              <BiMenu onClick={handelClick} size={"1.5rem "} />
             </div>
           </div>
         </div>
@@ -82,15 +82,15 @@ const Navbar = ({ handelClick, open }: INavbar) => {
            fixed h-[8%]  w-full  z-30`}
         >
           <div className="padding-1 justify-between mx-auto w-full h-full flex">
-            <div className="flex ">
-              <img
-                src={import.meta.env.VITE_BASE_URL + "/images/SK-logo.png"}
-                className="cursor-pointer hover:animate-pulse z-20"
-                alt="SK"
+            <div className="flex justify-center items-center">
+              <p
+                className="text-2xl italic font-bold text-rose-700 border  border-rose-700  flex justify-center items-center h-10 w-10 cursor-pointer"
                 onClick={() => {
                   navigate("/");
                 }}
-              />
+              >
+                SK
+              </p>
             </div>
             <div className="px-4 sm:flex hidden items-center justify-center gap-4">
               <a>

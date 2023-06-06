@@ -11,9 +11,6 @@ const SideMenu = ({
   open: boolean;
   setOpen: Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  const location = useLocation();
-  const isRoot = location.pathname === "/";
-
   const handleClick = () => {
     setOpen((state) => (state === true ? false : true));
   };

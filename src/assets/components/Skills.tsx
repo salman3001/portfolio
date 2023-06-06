@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div className=" padding-1 padding-2  gap-8 flex flex-col bg">
       <div>
-        <h1 id="skills" className="text-4xl text-rose-700 font-bold">
+        <h1 id="skills" className="text-4xl font-bold">
           Skills
         </h1>
         <div className="divider"></div>
@@ -77,9 +77,9 @@ const Skills = () => {
             </a>
           </div>
           <div className=" shadow-gray-400 shadow-inner pt-[4px]">
-            <div className=" border-x border-b h-[350px] overflow-y-scroll ">
+            <div className=" border-x border-b h-[400px] overflow-y-scroll ">
               {tab === "All" && (
-                <div className="flex my-12 flex-wrap justify-center  items-center gap-4 h-full">
+                <div className="flex my-12 flex-wrap justify-center gap-4 h-full">
                   {skillsData.languages.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
@@ -118,7 +118,7 @@ const Skills = () => {
                 </div>
               )}
               {tab === "Languages" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {skillsData.languages.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
@@ -128,7 +128,7 @@ const Skills = () => {
               )}
 
               {tab === "Frameworks" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {skillsData.frameworks.frontend.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
@@ -143,7 +143,7 @@ const Skills = () => {
                 </div>
               )}
               {tab === "UI" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {skillsData.ui.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
@@ -152,7 +152,7 @@ const Skills = () => {
                 </div>
               )}
               {tab === "Liberaries" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {" "}
                   {skillsData.liberaries.map((skill, index) => (
                     <div key={index}>
@@ -162,7 +162,7 @@ const Skills = () => {
                 </div>
               )}
               {tab === "Databases" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {skillsData.Db.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
@@ -171,7 +171,7 @@ const Skills = () => {
                 </div>
               )}
               {tab === "Testing" && (
-                <div className="flex flex-wrap justify-center items-center gap-4 h-full">
+                <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {skillsData.testing.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />

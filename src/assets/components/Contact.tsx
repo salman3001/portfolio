@@ -66,7 +66,7 @@ const Contact = () => {
       className="  bg-base-100 padding-1 padding-2  flex flex-col gap-4"
     >
       <div>
-        <h1 id="projects" className="text-4xl text-rose-700 font-bold">
+        <h1 id="projects" className="text-4xl font-bold">
           Lets Connect
         </h1>
         <div className="divider"></div>

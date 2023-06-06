@@ -8,7 +8,7 @@ html {
 }
 
 a {
-  @apply hover:text-rose-700 transition-colors text-lg lg:text-2xl;
+  @apply hover:text-rose-700 transition-colors text-lg lg:text-2xl cursor-pointer;
 }
 
 body {
@@ -17,6 +17,20 @@ body {
 
 svg {
   @apply hover:text-rose-700 transition-colors;
+}
+
+/* slider */
+
+.swiper-button-prev {
+  color: crimson !important;
+}
+
+.swiper-button-next {
+  color: crimson !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: crimson !important;
 }
 
 /* scrollbar */
