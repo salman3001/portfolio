@@ -46,13 +46,15 @@ const Projects = () => {
           className="flex scroll-smooth  overflow-scroll snap-x snap-mandatory scrollbar-hide p-8"
         >
           <div className="flex min-w-max justify-center gap-4  ">
-            {projectData.map((project) => (
-              <Card
-                discription={project.description}
-                title={project.title}
-                img={project.img}
-                link={project.link}
-              />
+            {projectData.map((project, index) => (
+              <div key={index}>
+                <Card
+                  discription={project.description}
+                  title={project.title}
+                  img={project.img}
+                  link={project.link}
+                />
+              </div>
             ))}
           </div>
         </div>

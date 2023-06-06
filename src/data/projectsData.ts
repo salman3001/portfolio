@@ -1,5 +1,18 @@
 export const projectData = [
   {
+    title: "Laundramoon App - frontend (Under development)",
+    img: import.meta.env.VITE_BASE_URL + "/images/laundramoon.png",
+    description:
+      "This is a online laundry service app where user can book laundry services",
+    link: "https://salman3001.github.io/laundramoon-frontend-react/",
+  },
+  {
+    title: "Javansurksha - Web Landing page",
+    img: import.meta.env.VITE_BASE_URL + "/images/jivansurksha.png",
+    description: "A landing page created for jivansurksha website",
+    link: "https://salman3001.github.io/jivansurksha-figma-project-2/",
+  },
+  {
     title: "BuyZone Ecommerce App",
     img: import.meta.env.VITE_BASE_URL + "/images/mern-logo.png",
     description:

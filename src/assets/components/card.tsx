@@ -11,7 +11,7 @@ export default function Card(prop: IFeedCard) {
       {/* image container */}
       <div className="relative h-[40%] w-auto">
         <div
-          className={`group-hover:scale-110 h-full w-full transition-transform bg-no-repeat bg-center bg-cover`}
+          className={`group-hover:scale-110 h-full w-full transition-transform bg-no-repeat bg-center bg-contain`}
           style={{
             backgroundImage: `url(${prop.img})`,
           }}

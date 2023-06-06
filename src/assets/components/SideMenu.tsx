@@ -2,6 +2,7 @@ import { Dispatch } from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import { useLocation, Link } from "react-router-dom";
 
 const SideMenu = ({
   setOpen,
@@ -10,33 +11,33 @@ const SideMenu = ({
   open: boolean;
   setOpen: Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  const location = useLocation();
+  const isRoot = location.pathname === "/";
+
   const handleClick = () => {
     setOpen((state) => (state === true ? false : true));
   };
 
   return (
     <div
-      className={`flex flex-col text-xl bg-gradient-to-tl to-black from-gray-800 sm:hidden h-screen fixed  ${
+      className={`flex flex-col text-white text-xl bg-gradient-to-tl to-black from-gray-800 sm:hidden h-screen fixed  ${
         open ? "translate-x-0" : "translate-x-full"
       } gap-8 w-full  justify-center items-center z-10 transition-transform`}
     >
-      <a onClick={handleClick} href="#resume">
-        Resume
-      </a>{" "}
-      <a onClick={handleClick} href="#skills">
-        Skills
-      </a>{" "}
-      <a onClick={handleClick} href="#projects">
-        Projects
+      <a href="#resume" onClick={handleClick}>
+        <Link to="/#resume"> Resume</Link>
       </a>{" "}
       <a onClick={handleClick} href="#experience">
-        Experience
+        <Link to="/#experience"> Experience</Link>
       </a>{" "}
       <a onClick={handleClick} href="#aboutme">
-        About Me
+        <Link to="/#aboutme">About Me</Link>
       </a>
       <a onClick={handleClick} href="#contact">
-        Contact
+        <Link to="/#contact"> Contact</Link>
+      </a>
+      <a onClick={handleClick} href="#contact">
+        <Link to="/projects"> All Projects</Link>
       </a>
       <a
         onClick={handleClick}

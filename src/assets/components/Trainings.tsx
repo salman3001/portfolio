@@ -21,8 +21,11 @@ const Trainings = () => {
         <div className="divider"></div>
       </div>
       <ul className="flex pl-2 flex-col justify-center gap-4  max-w-lg">
-        {trainingData.map((training) => (
-          <li className="flex justify-between border-b-2 border-rose-300 p-2">
+        {trainingData.map((training, index) => (
+          <li
+            key={index}
+            className="flex justify-between border-b-2 border-rose-300 p-2"
+          >
             <a
               href={training.link}
               target="_blank"
