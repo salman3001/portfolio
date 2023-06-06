@@ -29,7 +29,7 @@ const Layout = () => {
               <div className="flex flex-col py-12  items-center justify-start max-w-2xl text-gray-400 text-sm ">
                 <span className="text-2xl text-left w-full ">
                   Hi, I am
-                  <span className="text-rose-700 text-3xl">Salman</span>, I am
+                  <span className="text-rose-700 text-3xl"> Salman</span>, I am
                   experienced front end web developer with full stack devlopment
                   skills
                 </span>
