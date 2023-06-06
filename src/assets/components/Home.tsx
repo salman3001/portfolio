@@ -11,7 +11,6 @@ export const Home = () => {
   return (
     <>
       <ScrollToHashElement />
-
       <Projects />
       <Skills />
       <Experience />

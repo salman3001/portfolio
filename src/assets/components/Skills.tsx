@@ -24,12 +24,12 @@ const Skills = () => {
         </h1>
         <div className="divider"></div>
       </div>
-      <div className="flex  flex-col gap-6">
-        <div>
-          <div className="tabs justify-center sm:justify-start font-semibold">
+      <div className="flex  flex-col gap-6 w-full ">
+        <div className="relative">
+          <div className="relative whitespace-nowrap font-semibold overflow-x-scroll scrollbar-hide [&>a]:text-xl ">
             <a
               className={`tab tab-lifted ${
-                tab === "All" && "tab-active text-rose-700"
+                tab === "All" && "tab-active text-rose-700 "
               }`}
               onClick={ClickHandler}
             >
