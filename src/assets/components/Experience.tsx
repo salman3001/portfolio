@@ -14,7 +14,7 @@ const Experience = () => {
         <div>
           <div className="pb-6">
             <h1 className="text-2xl font-bold">
-              Frontend Developer (Remote Job)
+              Full Stack Developer (Freelance)
             </h1>
             <p className="text-gray-500">
               Wizards and Solution Pivate Ltd. India

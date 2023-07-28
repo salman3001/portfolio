@@ -23,7 +23,7 @@ const Slider = (prop: { slides: { id: number; component: ReactNode }[] }) => {
         clickable: true,
       }}
       navigation
-      autoplay={{}}
+     
     >
       {prop.slides.map((slide) => (
         <SwiperSlide key={slide.id}>{slide.component}</SwiperSlide>

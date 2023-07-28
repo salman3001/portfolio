@@ -30,13 +30,11 @@ const Layout = () => {
                 <span className="text-2xl text-left w-full ">
                   Hi, I am
                   <span className="text-rose-700 text-3xl"> Salman</span>, I am
-                  experienced front end web developer with full stack devlopment
-                  skills
+                  a full stack developer.
                 </span>
-                <br />I am specialized in React and Mern Stack developments. I
-                have developed multiple projects with Reactjs, ExpressJs,
-                NestJs, Mongodb etc. With strong grasp of typescript and
-                javascript I make immersive user experiences through responsive
+                <br />I can work with multiple stacks and tools like Reactjs, Vue js, Laravel, ExpressJs,
+               Adonis js, NestJs, My Sql, Mongodb etc. With strong grasp of typescript,
+                javascript and Php I make immersive user experiences through responsive
                 designs. Keeping up with industry trends and best practices, I
                 ensure high-quality work that exceeds client expectations. With
                 a detail-oriented approach and problem-solving abilities, I

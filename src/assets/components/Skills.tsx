@@ -8,9 +8,9 @@ const Skills = () => {
     | "Languages"
     | "UI"
     | "Frameworks"
-    | "Liberaries"
     | "Databases"
     | "Testing"
+    | "Others"
   >("All");
 
   const ClickHandler = (e: SyntheticEvent<HTMLAnchorElement>) => {
@@ -59,14 +59,7 @@ const Skills = () => {
             >
               Frameworks
             </a>
-            <a
-              className={`tab tab-lifted ${
-                tab === "Liberaries" && "tab-active text-rose-700"
-              }`}
-              onClick={ClickHandler}
-            >
-              Liberaries
-            </a>
+
             <a
               className={`tab tab-lifted ${
                 tab === "Databases" && "tab-active text-rose-700"
@@ -74,6 +67,22 @@ const Skills = () => {
               onClick={ClickHandler}
             >
               Databases
+            </a>
+            <a
+              className={`tab tab-lifted ${
+                tab === "Testing" && "tab-active text-rose-700"
+              }`}
+              onClick={ClickHandler}
+            >
+              Testing
+            </a>
+            <a
+              className={`tab tab-lifted ${
+                tab === "Others" && "tab-active text-rose-700"
+              }`}
+              onClick={ClickHandler}
+            >
+              Others
             </a>
           </div>
           <div className=" shadow-gray-400 shadow-inner pt-[4px]">
@@ -100,7 +109,7 @@ const Skills = () => {
                       <SkillsCard name={skill.name} img={skill.img} />
                     </div>
                   ))}
-                  {skillsData.liberaries.map((skill, index) => (
+                  {skillsData.others.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
                     </div>
@@ -151,10 +160,10 @@ const Skills = () => {
                   ))}
                 </div>
               )}
-              {tab === "Liberaries" && (
+              {tab === "Others" && (
                 <div className="flex flex-wrap p-2 sm:p-6 gap-4 h-full">
                   {" "}
-                  {skillsData.liberaries.map((skill, index) => (
+                  {skillsData.others.map((skill, index) => (
                     <div key={index}>
                       <SkillsCard name={skill.name} img={skill.img} />
                     </div>
@@ -179,7 +188,6 @@ const Skills = () => {
                   ))}
                 </div>
               )}
-
               {/* aad */}
             </div>
           </div>

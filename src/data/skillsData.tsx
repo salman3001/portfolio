@@ -12,12 +12,21 @@ export const skillsData = {
       name: "Typescript",
       img: import.meta.env.VITE_BASE_URL + "/images/ts-logo.png",
     },
+    {
+      name: "PHP",
+      img: import.meta.env.VITE_BASE_URL + "/images/php.jpg",
+    },
   ],
   frameworks: {
     frontend: [
+
       {
         name: "React JS",
         img: import.meta.env.VITE_BASE_URL + "/images/react-logo.png",
+      },
+      {
+        name: "Vue JS",
+        img: import.meta.env.VITE_BASE_URL + "/images/vue-logo.png",
       },
       {
         name: "Next JS",
@@ -25,6 +34,14 @@ export const skillsData = {
       },
     ],
     backend: [
+      {
+        name: "Laravel",
+        img: import.meta.env.VITE_BASE_URL + "/images/laravel-logo.png",
+      },
+      {
+        name: "Adonis JS",
+        img: import.meta.env.VITE_BASE_URL + "/images/adonis-logo.png",
+      },
       {
         name: "Node JS",
         img: import.meta.env.VITE_BASE_URL + "/images/nodejs-logo.png",
@@ -59,11 +76,19 @@ export const skillsData = {
   ],
   Db: [
     {
+      name: "My Sql",
+      img: import.meta.env.VITE_BASE_URL + "/images/mysql-logo.png",
+    },
+    {
       name: "Mongo Db",
       img: import.meta.env.VITE_BASE_URL + "/images/mongo-logo.png",
     },
   ],
-  liberaries: [
+  others: [
+    {
+      name: "Docker",
+      img: import.meta.env.VITE_BASE_URL + "/images/docker-logo.png",
+    },
     {
       name: "Redux",
       img: import.meta.env.VITE_BASE_URL + "/images/redux-logo.png",
