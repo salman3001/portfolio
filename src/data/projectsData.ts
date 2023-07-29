@@ -10,7 +10,7 @@ export const projectData = [
     img: import.meta.env.VITE_BASE_URL + "/images/laundramoon.png",
     description:
       "This is an online laundry service app where user can book laundry services.",
-    link: "https:laundramoon.infoster.in/",
+    link: "https://laundramoon.infoster.in/",
   },
   {
     title: "Jivansurksha - Figma template to html",
