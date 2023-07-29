@@ -32,15 +32,13 @@ const Layout = () => {
                   <span className="text-rose-700 text-3xl"> Salman</span>, I am
                   a full stack developer.
                 </span>
-                <br />I can work with multiple stacks and tools like Reactjs, Vue js, Laravel, ExpressJs,
-               Adonis js, NestJs, My Sql, Mongodb etc. With strong grasp of typescript,
-                javascript and Php I make immersive user experiences through responsive
-                designs. Keeping up with industry trends and best practices, I
-                ensure high-quality work that exceeds client expectations. With
-                a detail-oriented approach and problem-solving abilities, I
-                deliver exceptional solutions. Let's bring your ideas to life
-                and create remarkable digital experiences together. Thank you
-                for visiting my portfolio! Check out my projects below.
+                <br />
+                With vast array of knowledge in many diffrent frontend and
+                backend languages, frameworks, databases and best code practice.
+                My objective is to simply be the best web developer. I am
+                dedicated to perfecting my craft by learning from more
+                exprienced developers, remaining humble and countinuosly making
+                efforts to learn all that i can about development.
                 <div className="flex justify-start py-4 gap-4 w-full">
                   <a className="btn-1 group" href="#projects">
                     View Projects
